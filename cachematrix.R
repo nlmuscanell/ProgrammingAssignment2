@@ -1,7 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Programming Assigment 2 (Week 3) - Lexical Scoping
 
-## This function creates a special "matrix" object that can cache its inverse
+## Write a function that creates a special "matrix" object that can cache its inverse
 
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
@@ -17,7 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {
        getinverse = getinverse)
 }
 
-## This function computes the inverse of the special "matrix" returned by 
+## Write a function that computes the inverse of the special "matrix" returned by 
 ## makeCacheMatrix above
 
 cacheSolve <- function(x, ...) {
@@ -33,5 +32,8 @@ cacheSolve <- function(x, ...) {
   i
 }
 
-## Define a test matrix
+## Define a test matrix to test the function
 test <- makeCacheMatrix(matrix(1:4, nrow=2, ncol=2))
+
+# Run function
+cacheSolve(test)
